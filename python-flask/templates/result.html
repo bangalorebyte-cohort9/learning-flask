@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         {% for key in result.keys() %}
+         
+            <tr>
+               <th> {{ key }} </th>
+               <!-- <td> {{ value }} </td> -->
+            </tr>
+            
+         {% endfor %}
+         {% for value in result.values() %}
+         
+            <tr>
+               <th> {{ value }} </th>
+            </tr>
+            
+         {% endfor %}
+         
+      </table>
+      
+   </body>
+</html>
